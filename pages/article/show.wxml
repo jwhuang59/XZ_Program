@@ -1,0 +1,10 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<!--pages/article/show.wxml-->
+
+<view class="detail_page main">
+    <view class="detail_title">{{detail.title}}</view>
+    <view class="date_hits">
+      <text>{{detail.time}}</text><text>点击量：{{detail.num}}</text>
+    </view>
+   <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>

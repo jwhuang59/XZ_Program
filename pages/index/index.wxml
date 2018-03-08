@@ -1,0 +1,37 @@
+<import src="/pages/common/head.wxml" />
+<import src="/pages/common/foot.wxml" />
+<!--index.wxml-->
+<template is="head" data="{{...head_data}}" />
+
+<view>
+  <view class="banner_container">
+    <image class="banner" src="../../images/pic.jpg" mode="widthFix"></image>
+  </view>
+  <view class="about_stationmaster_container main">
+    <view class="title">博主信息</view>
+    <view class="li_container">
+      <view class="li">姓名：<text>黄家伟</text></view>
+      <view class="li">职业：<text>WEB前端、PHP开发</text></view>
+      <view class="li">座右铭：<text>路漫漫其修远兮，吾将上下而求索</text></view>
+      <view class="li">联系我：<text>453321854</text></view>
+    </view>
+  </view>
+  <view class="article_list_container main">
+    <block wx:for="{{articles}}" wx:key="{{item.aid}}">
+        <navigator class="article_list" url="/pages/article/show?id={{item.aid}}">
+          <image class="pic" src="{{pic}}{{item.aid}}.jpg" mode="widthFix"></image>
+          <view class="title">{{item.title}}</view>
+          <view class="date_hits">
+            <text>{{item.time}}</text>
+            <text class="category_name">{{item.type}}</text>
+            <text class="hits">{{item.num}}</text>
+          </view>
+        </navigator>
+    </block>
+  </view>
+
+</view>
+
+
+
+<template is="foot" data="{{...settings}}" />

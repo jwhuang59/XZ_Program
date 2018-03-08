@@ -1,0 +1,22 @@
+<!--pages/article/list.wxml-->
+<import src="/pages/common/head.wxml" />
+<import src="/pages/common/foot.wxml" />
+<template is="head" data="{{...head_data}}" />
+<view>
+   <view class="category_list_title main"><text wx:if="{{is_type == ''}}">Blog文章</text><text wx:else>{{articles[0].name}}</text></view> 
+  <view class="article_list_container main">
+    <block wx:for="{{articles}}" wx:key="{{item.aid}}">
+        <navigator class="article_list" url="/pages/article/show?id={{item.aid}}">
+          <image class="pic" src="{{pic}}{{item.aid}}.jpg" mode="widthFix"></image>
+          <view class="title">{{item.title}}</view>
+          <view class="date_hits">
+            <text>{{item.time}}</text>
+            <text class="category_name">{{item.type}}</text>
+            <text class="hits">{{item.num}}</text>
+          </view>
+        </navigator>
+    </block>
+  </view>
+
+</view>
+<template is="foot" data="{{...settings}}" />

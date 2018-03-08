@@ -1,0 +1,17 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/article/show",
+    "pages/article/list",
+    "pages/about/index",
+    "pages/feedback/index",
+    "pages/page/resume"
+  ],
+  "window":{
+    "backgroundColor":"#eeeee",
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#393d49",
+    "navigationBarTitleText": "戏子博客",
+    "navigationBarTextStyle":"white"
+  }
+}

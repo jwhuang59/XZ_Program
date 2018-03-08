@@ -1,0 +1,44 @@
+/* pages/page/index.wxss */
+.detail_page{
+  padding: 10px;
+  background: #fff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.detail_title {
+  height: 40px;
+  margin-top: 10px;
+  text-align: center;
+}
+.detail_title text{
+  display:inline-blcok;
+  padding: 10px 15px;
+  line-height: 24px;
+  font-size: 18px;
+  border-bottom: 1px solid #009688;
+}
+.person{
+  width:30%;
+  display:block;
+  margin:0 auto;
+  padding:10px 0;
+
+}
+
+.detail_page .detail_text {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 26px;
+    word-wrap: break-word;
+    text-indent: 20px;
+}
+.detail_page .detail_text0{
+    font-size: 14px;
+    line-height: 26px;
+    word-wrap: break-word;
+}
+.detail_page .detail_text0 text{
+  font-size:16px;
+  font-weight:bold;
+  color:#009688;
+}

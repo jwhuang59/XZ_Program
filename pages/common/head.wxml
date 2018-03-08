@@ -1,0 +1,45 @@
+<template name="head">
+  <view class="head_line"></view>
+  <view class="left_nav_mask {{left_nav_show}}" bindtap="left_nav_mask_btn"></view>
+  <view class="left_nav_btn" bindtap="left_nav_btn">></view>
+  <view class="left_nav_container {{left_nav_show}}">
+    <navigator class="logo" url="/pages/index/index">
+    <image src="/images/logo.png"></image>
+    </navigator>
+    <view class="nav_container">
+      <navigator class="first_cate" url="/pages/article/list?type=">Blog文章</navigator>
+        <view class="second_nav_container">
+          <view class="second_nav">
+            <navigator class="second_cate" url="/pages/article/list?type=浅谈">浅谈</navigator>
+          </view>
+          <view class="second_nav">
+            <navigator class="second_cate" url="/pages/article/list?type=JavaScript">JavaScript</navigator>
+          </view>
+          <view class="second_nav">
+            <navigator class="second_cate" url="/pages/article/list?type=PHP">PHP</navigator>
+          </view>
+          <view class="second_nav">
+            <navigator class="second_cate" url="/pages/article/list?type=前端文档">前端文档</navigator>
+          </view>
+          <view class="second_nav">
+            <navigator class="second_cate" url="/pages/article/list?type=后端文档">后端文档</navigator>
+          </view>
+        </view>
+    </view>
+    <view class="nav_container">
+      <navigator class="first_cate" url="/pages/about/index">关于</navigator>
+        <view class="second_nav_container">
+          <view class="second_nav">
+            <navigator class="second_cate" url="/pages/about/index">关于我</navigator>
+          </view>
+          
+          <view class="second_nav">
+            <navigator class="second_cate" url="/pages/page/resume">个人简历</navigator>
+          </view>
+          <view class="second_nav">
+            <navigator class="second_cate" url="/pages/feedback/index">留言</navigator>
+          </view>
+        </view>
+    </view>
+  </view>
+</template>

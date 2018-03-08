@@ -1,0 +1,99 @@
+/**index.wxss**/
+.banner_container {
+  width: 100%;
+  font-size: 0px;
+ 
+}
+
+.banner_container .banner {
+  width: 100%;
+  height: auto;
+}
+
+
+.about_stationmaster_container{
+   background: #fff;
+   margin-top: 10px
+}
+.about_stationmaster_container .title{
+  width: auto;
+    margin: 0;
+    height: 38px;
+    line-height: 40px;
+    padding: 0 15px;
+    border: none;
+    background-color: #fff;
+    border-bottom: 1px solid #009688;
+}
+.about_stationmaster_container .li_container{
+    background: #fff;
+    padding: 10px 10px 10px 15px;
+}
+.about_stationmaster_container .li{
+    line-height: 28px;
+    font-size:14px;
+    white-space: nowrap;
+    overflow: hidden;
+    list-style: decimal-leading-zero inside;
+    color: #000;
+}
+.about_stationmaster_container .li text{
+    color: #009688;
+}
+
+
+.article_list_container .article_list {
+  background: #fff;
+  padding: 10px 10px 10px 120px;
+  height: 66px;
+  margin-top: 10px;
+  position: relative;
+}
+
+
+.article_list_container .article_list .pic {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 100px;
+  height: 66px;
+  line-height: 66px;
+  overflow: hidden;
+}
+
+.article_list_container .article_list .title {
+  max-width: 95%;
+  margin-right: 10px;
+  overflow: hidden;
+  text-overflow: clip;
+  white-space: normal;
+  font-size: 14px;
+  line-height: 20px;
+  height: 40px;
+}
+
+.article_list_container .article_list text {
+  padding-right: 10px;
+  height: 18px;
+  line-height: 18px;
+}
+
+.article_list_container .article_list .category_name {
+  color: #009688;
+}
+
+.article_list_container .article_list .date_hits {
+  position: relative;
+  line-height: 18px;
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+.article_list_container .article_list .date_hits .hits {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  padding-left: 20px;
+}
+
+

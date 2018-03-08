@@ -1,0 +1,32 @@
+<!--pages/feedback/index.wxml-->
+<import src="/pages/common/head.wxml" />
+<import src="/pages/common/foot.wxml" />
+<template is="head" data="{{...head_data}}" />
+<view>
+  <view class="category_list_title main"><text>留言</text></view>
+  <view class="feedback_container main">
+    <form bindsubmit="formSubmit" bindreset="formReset">
+      <textarea auto-height placeholder="说两句吧..." name="content" value="{{feedback_content}}" />
+      <button formType="submit" size="default" type="primary">提交留言</button>
+    </form>
+  </view>
+  <view class="feedback_list_container main">
+    <view class="li "wx:for="{{feedbacks}}" wx:key="{{mid}}">
+      <view class="feedback_member">
+        <block>
+         <view class="avatar"><image src="{{item.head_pic}}"></image></view>
+        <view class="name_date"><view class="name">{{item.nickname}}</view><view class="date">{{item.time}}</view></view>
+        </block>                
+        <view class="feedback_content"><rich-text nodes="{{item.content}}" class="content"></rich-text></view>
+      </view>
+       <!-- <block wx:if="{{item.reply}}">
+      <view class="feedback_member feedback_reply">
+        <view class="avatar"><image src="/images/laozhang_avatar.png"></image></view>
+        <view class="name_date"><view class="name">老张</view><view class="date">{{item.reply_time}}</view></view>
+        <view class="feedback_content reply_content"><rich-text nodes="{{item.reply}}" class="content"></rich-text></view>
+      </view>
+      </block> -->
+    </view>
+  </view>
+</view>
+<template is="foot" data="{{...settings}}" />

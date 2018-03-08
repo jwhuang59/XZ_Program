@@ -1,0 +1,10 @@
+<!--pages/page/index.wxml-->
+<view class="detail_page main">
+    <view class="detail_title"><text>关于我</text></view>
+    <image class="person" src="../../images/person.png" mode="widthFix"></image>
+    <view class="detail_text">大家好，欢迎来到戏子的博客空间！我叫黄家伟，94年湖北人，主修Web前端开发和PHP。</view>
+    <view class="detail_text">大学计算机技术开发专业，爱好编程，喜欢钻研技术。</view>
+    <view class="detail_text">搭建本博客的目的就是学习与分享，记录学习的过程和方法，分享领域的问题和经验。，希望能帮到别人，也能让自己学到更多。也希望能有前辈指出不足提出建议，让一个菜鸟得到成长。</view>
+    <view class="detail_text0">我的座右铭：<text>路漫漫其修远兮，吾将上下而求索</text></view>
+</view>
+
