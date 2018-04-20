@@ -6,4 +6,4 @@
 
 微信扫码访问
 
-![Image text](http://www.jwhuang.site/static/images/wx_img.jpg)
+![Image text](https://github.com/jwhuang59/XZ_OnlineBlog/blob/master/static/images/wx_img.jpg)
